@@ -1,0 +1,532 @@
+{% extends 'shop/base.html' %}
+
+{% block title %} home {% endblock %}
+
+{% block style %}
+
+body {background-color: Beige;}
+
+#pic img{
+
+width: 255px;
+height: 355px;
+}
+
+.col-md-3 {
+  display: inline-block;
+  margin-left: 57px;
+}
+
+.carousel-indicators .active {
+background-color: blue;
+}
+
+.col-md-3 img {
+  width: 204px;
+  height: 234px;
+  margin-left: 30px;
+  margin-top: 21px;
+}
+
+.card-body{
+    width: 300px;
+    height: 200px;
+    color: dark;
+    font-family: Times New Roman;
+}
+
+body .carousel-indicator li{
+background-color: blue;
+}
+
+body .carousel-indicators{
+bottom: 0;
+}
+
+{% comment %} body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: blue;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+top: auto;
+bottom: auto;
+} {% endcomment %}
+
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+
+.col-lg-4 {
+  max-width: 22.333333%;
+  margin-left: 26px;
+}
+
+.circle{
+  font-size: 35px;
+  font-family: chiller;
+  margin-left: 36px;
+  margin-top: revert;
+}
+
+#sale {
+  color: saddlebrown;
+  text-align: center;
+  word-spacing: 3px;
+  font-family: cursive;
+  line-height: 84px;
+}
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.card{
+  border-radius: 2.25rem;
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+#block {
+  background-color: lightblue;
+  height: 480px;
+  width: 409px;
+}
+
+.p-md-5 {
+  padding: 0rem!important;
+  border-radius: 3.25rem;
+}
+
+.m-md-3 {
+  margin: 3rem!important;
+}
+
+#it {
+  padding-left: 7rem!important;
+  height: 440px;
+}
+
+
+#post{
+  border-radius:40px;
+  padding-left: 2rem!important;
+}
+
+.lead{
+  width:270px;
+}
+
+#lt{
+  border-radius: 95px;
+  height: 213px;
+  margin-top: -6px;
+  margin-bottom: 19px;
+}
+
+#pt{
+  border-radius: 95px;
+  height: 213px;
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+.tex{
+  font-size: 45px;
+}
+
+
+{% endblock %}
+</head>
+
+
+
+{% block body %}
+
+{% load static %}
+
+{% comment %} <ul class="nav nav-pills bg-light">
+  <li class="nav-item">
+    <p class=" pop dropdown-toggle mt-1 ml-3 pop " data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Watch
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Men's Shirt
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Mobile
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Shoes
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Women's Jacket
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Chair and Tabel
+  </p>
+  </li>
+  <li class="nav-item">
+    <p class="dropdown-toggle mt-1 ml-4 " data-container="body" data-toggle="popover" id="pop" data-placement="bottom" data-content="Vivamus
+sagittis lacus vel augue laoreet rutrum faucibus." data-html="true" style="">
+   Bed and Furniture
+  </p>
+  </li>
+</ul> {% endcomment %}
+
+<div class="container">
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade mt-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" id="pic">
+      <div class="carousel-item active">
+        <img src='/media/{{poster.0.image}}' class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          {% comment %} <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p> {% endcomment %}
+        </div>
+      </div>
+      <div class="carousel-item" id="pic">
+        <img src='/media/{{poster.1.image}}' class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item" id="pic">
+        <img src='/media/{{poster.2.image}}' class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="container marketing mt-5 mb-4 ">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/200x200/?mens jacket" class="rounded-circle" alt="Cinque Terre">
+      <title>Placeholder</title>
+      <h2 class="circle">MEN's Feshion</h2>
+    </div>
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/200x200/?tv" class="rounded-circle" alt="Cinque Terre">
+      <title>Placeholder</title>
+      <h2 class="circle">Electronics</h2>
+      
+    </div>
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/200x200/?ladies dress" class="rounded-circle" alt="Cinque Terre">
+      <title>Placeholder</title>
+      <h2 class="circle">WOMEN's Feshion</h2>
+    </div>
+    <div class="col-lg-4">
+      <img src="https://source.unsplash.com/200x200/?kids dress" class="rounded-circle" alt="Cinque Terre">
+      <title>Placeholder</title>
+      <h2 class="circle">KIDS's Feshion</h2>
+    </div><!-- /.col-lg-4 -->
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light mt-4" >
+  <div class="col-md-5 p-lg-5 mx-auto my-5" id="block">
+    <h1 class="display-4 fw-normal" style="color:brown; font-family:algerian;">REALME NAZRO 30A</h1>
+    <p class="lead fw-normal" style="color:black;font-family:cursive;">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+    <a class="btn btn-outline-success text-danger" href="#">Coming soon</a>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="ot">
+  <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="lt">
+    <div class="my-2 p-2" >
+        <h2 class="display-5" style="font-family:cursive;">UNDER</h2>
+        <p class="lead" style="font-family:arial;">₹<span class="tex">199</span></p>
+      </div>
+    </div>
+    <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="lt">
+      <div class="my-2 p-2" >
+          <h2 class="display-5" style="font-family:cursive;">UNDER</h2>
+          <p class="lead" style="font-family:arial;"><span class="tex">₹499</span></p>
+        </div>
+      </div>
+      <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="lt">
+        <div class="my-2 p-2" >
+            <h2 class="display-5" style="font-family:cursive;">UNDER</h2>
+            <p class="lead" style="font-family:arial;"><span class="tex">₹299</span></p>
+          </div>
+        </div>
+        <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="lt">
+          <div class="my-2 p-2" >
+              <h2 class="display-5" style="font-family:cursive;">UNDER</h2>
+              <p class="lead" style="font-family:arial;"><span class="tex">₹399</span></p>
+            </div>
+          </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="it">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="post">
+    <div class="my-3 p-3" >
+      <h2 class="display-5" style="font-family:cursive;">20 % OFF</h2>
+      <p class="lead" style="font-family:arial;">On Mobiles</p>
+    </div>
+    <img src="https://source.unsplash.com/200x200/?mobile" class="rounded-circle" alt="Cinque Terre">
+  </div>
+  <div class="bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden" id="post">
+    <div class="my-3 py-3">
+      <h2 class="display-5" style="font-family:cursive;">30 % OFF</h2>
+      <p class="lead" style="font-family:arial;">On Laptop ans Desktop</p>
+    </div>
+    <img src="https://source.unsplash.com/200x200/?laptop" class="rounded-circle" alt="Cinque Terre">
+  </div>
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="post">
+    <div class="my-3 py-3">
+      <h2 class="display-5" style="font-family:cursive;">25 % OFF</h2>
+      <p class="lead" style="font-family:arial;">On Winter Jacket</p>
+    </div>
+    <img src="https://source.unsplash.com/200x200/?jacket" class="rounded-circle" alt="Cinque Terre">
+  </div>
+</div>
+
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="ot">
+  <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden" id="pt">
+    <div class="my-2 p-2" >
+        <h2 class="display-5" style="font-family:cursive;">MIN</h2>
+        <p class="lead" style="font-family:arial;">₹<span class="tex">499</span></p>
+      </div>
+    </div>
+    <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden" id="pt">
+      <div class="my-2 p-2" >
+          <h2 class="display-5" style="font-family:cursive;">MIN</h2>
+          <p class="lead" style="font-family:arial;"><span class="tex">₹999</span></p>
+        </div>
+      </div>
+      <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden" id="pt">
+        <div class="my-2 p-2" >
+            <h2 class="display-5" style="font-family:cursive;">MIN</h2>
+            <p class="lead" style="font-family:arial;"><span class="tex">₹1499</span></p>
+          </div>
+        </div>
+        <div class="bg-warning mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden" id="pt">
+          <div class="my-2 p-2" >
+              <h2 class="display-5" style="font-family:cursive;">MIN</h2>
+              <p class="lead" style="font-family:arial;"><span class="tex">₹1999</span></p>
+            </div>
+          </div>
+</div>
+
+<div class="container">
+
+  <!--Slideshow starts here -->
+  {% for product, range, nSlides in allProds %}
+  <h5 class="my-4" id="sale">Flash Sale On {{product.0.category}} - Recommended Items</h5>
+  <div class="row">
+  <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+    {% comment %} <ul class="carousel-indicators">
+      <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+
+      {% for i in range %}
+      <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}"></li>
+      {% endfor %}
+    </ul> {% endcomment %}
+
+
+    <div class="container carousel-inner no-padding">
+
+
+      <div class="carousel-item active">
+        
+
+        {% for i in product %}
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;height: 500px;border-color: black;border-style: solid;border-width: 3px;background-color:rgb(232, 227, 227)">
+            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title" style="color:black;" id="namepr{{i.id}}">{{i.product_name}}</h3>
+              <h5 class="card-text" >Price - <span id="pricepr{{i.id}}">{{i.price}}</span> ₹</h5>
+              <p class="card-text">{{i.desc | slice:"0:35"}}...</p>
+              <span id="divpr{{i.id}}" class="divpr">
+              <button id="pr{{i.id}}" class="btn btn-warning btn-outline-dark cart">Add To Cart</button></span>
+              <a href="/shop/products/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-info btn-outline-dark cart ml-1">QuickView</button></a>
+            </div>
+          </div>
+        </div>
+        {% if forloop.counter|divisibleby:3 and forloop.counter > 0 and not forloop.last %}
+      </div><div class="carousel-item">
+        {% endif %}
+
+        {% endfor %}
+      </div>
+
+
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+  <!-- left and right controls for the slide -->
+  {% comment %} <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a> {% endcomment %}
+  
+
+{% endblock %}
+
+{% block js %}
+
+<script>
+  // Find out the cart items from localStorage
+  if (localStorage.getItem('cart') == null) {
+      var cart = {};
+  } else {
+      cart = JSON.parse(localStorage.getItem('cart'));
+      updateCart(cart);
+  }
+  // If the add to cart button is clicked, add/increment the item
+  //$('.cart').click(function() {
+    $('.divpr').on('click', 'button.cart', function(){
+      var idstr = this.id.toString();
+      if (cart[idstr] != undefined) {
+          qty = cart[idstr][0] + 1;
+      } else {
+          qty = 1;
+          name = document.getElementById('name'+idstr).innerHTML;
+          price = document.getElementById('price'+idstr).innerHTML;
+          cart[idstr] = [qty, name, parseInt(price)];
+      }
+      updateCart(cart);
+  });
+  //Add Popover to cart
+  $('#popcart').popover();
+  updatePopover(cart);
+  function updatePopover(cart)
+  {
+      var popStr = "";
+      popStr = popStr + "<h4> Items in your cart</h4><div class='mx-2 my-2'>";
+      var i = 1;
+      for (var item in cart){
+          popStr = popStr + "<b>" + i + "</b>.";
+          popStr = popStr  + document.getElementById('name' + item).innerHTML.slice(0, 19) + "... Qty :" + cart[item][0] + '<br>';
+          i = i+1;
+      }
+      popStr = popStr + "</div>  <a href='/shop/checkout'><button class='btn btn-danger btn-outline-light mx-2' id ='checkout'>Checkout</button></a><button class='btn btn-danger btn-outline-light' onclick='clearCart()' id ='clearCart'>Clear Cart</button>   " 
+      document.getElementById('popcart').setAttribute('data-content', popStr);
+      $('#popcart').popover('show');
+  }
+  function clearCart() {
+    cart = JSON.parse(localStorage.getItem('cart'));
+    for (var item in cart) {
+        document.getElementById('div' + item).innerHTML = '<button id="' + item + '" class="btn btn-warning btn-outline-dark cart">Add To Cart</button>'
+    }
+    localStorage.clear();
+    cart = {};
+    updateCart(cart);
+}
+  function updateCart(cart) {
+      var sum = 0;
+      for (var item in cart) {
+          sum = sum + cart[item][0];
+          document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "' class='btn btn-warning btn-outline-dark minus'>-</button> <span id='val" + item + "''>" + cart[item][0] + "</span> <button id='plus" + item + "' class='btn btn-warning btn-outline-dark plus'> + </button>";
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      document.getElementById('cart').innerHTML = sum;
+      console.log(cart);
+      updatePopover(cart);
+  }
+  // If plus or minus button is clicked, change the cart as well as the display value
+  $('.divpr').on("click", "button.minus", function() {
+      a = this.id.slice(7, );
+      cart['pr' + a][0] = cart['pr' + a][0] - 1;
+      cart['pr' + a][0] = Math.max(0, cart['pr' + a][0]);
+      document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+      
+      if (cart['pr' + a][0] == 0){
+        document.getElementById('divpr' + a).innerHTML = '<button id="pr'+a+'" class="btn btn-warning btn-outline-dark cart">Add to Cart</button>';
+        delete cart['pr'+a];
+    }
+    else{
+        document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+    } 
+    updateCart(cart);
+  });
+  $('.divpr').on("click", "button.plus", function() {
+      a = this.id.slice(6, );
+      cart['pr' + a][0] = cart['pr' + a][0] + 1;
+      document.getElementById('valpr' + a).innerHTML = cart['pr' + a][0];
+      updateCart(cart);
+  });
+
+
+
+  {% comment %} $('.pop').popover();
+  document.getElementByClassName('pop').setAttribute('data-content', '<h5>Items</h5>'); {% endcomment %}
+
+
+  </script>
+
+
+
+{% endblock %}
