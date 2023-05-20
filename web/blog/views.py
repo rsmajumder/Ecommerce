@@ -1,6 +1,0 @@
-from django.shortcuts import render
-from django.shortcuts import render,redirect,HttpResponse
-
-
-def index(request):
-    return HttpResponse("hello")
